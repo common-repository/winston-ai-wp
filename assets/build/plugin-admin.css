@@ -1,0 +1,22 @@
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/@wordpress/scripts/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/@wordpress/scripts/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[9].use[0]!./node_modules/sass-loader/dist/cjs.js!./assets/src/styles/admin.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/** Import the shared style */
+/** CSS custom properties */
+:root {
+  --winston_color-primary: #3452fe;
+}
+
+#dashboard_right_now a.demo-count::before {
+  content: "\f115";
+}
+
+.notice {
+  display: none !important;
+}
+
+#toplevel_page_winston-ai-wp .wp-menu-image::before {
+  content: url("data:image/svg+xml,<svg height=\"20\" viewBox=\"0 0 20 20\" width=\"20\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><clipPath id=\"a\"><path d=\"m20 0v20h-20v-20z\"/></clipPath><clipPath id=\"b\"><path d=\"m10 0c5.5228475 0 10 4.4771525 10 10s-4.4771525 10-10 10-10-4.4771525-10-10 4.4771525-10 10-10z\"/></clipPath><clipPath id=\"c\"><path d=\"m2.43732591 0 1.69637883 6.84 1.81337047-6.84h2.08635097l1.79387187 6.84 1.73537605-6.84h2.4373259l-2.9247911 10h-2.32033425l-1.75487465-6.37999999-1.8718663 6.37999999h-2.30083565l-2.82729805-10z\"/></clipPath><g clip-path=\"url%28%23a%29\"><g clip-path=\"url%28%23b%29\"><path d=\"m0 0h20v20h-20z\" fill=\"%23fff\"/></g><g clip-path=\"url%28%23c%29\" transform=\"translate%283 5%29\"><path d=\"m0 0h14v10h-14z\" fill=\"%233451fe\"/></g></g></svg>");
+}
+
+/*# sourceMappingURL=plugin-admin.css.map*/

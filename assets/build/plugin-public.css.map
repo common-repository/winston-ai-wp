@@ -1,0 +1,1 @@
+{"version":3,"file":"plugin-public.css","mappings":";;;AAAA;AACA;AACA;EACE;AACF,C","sources":["webpack://winston-ai-wp/./assets/src/styles/public.scss"],"sourcesContent":["/** Import the shared style */\n/** CSS custom properties */\n:root {\n  --winston_color-primary: #3452fe;\n}"],"names":[],"sourceRoot":""}

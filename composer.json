@@ -1,0 +1,90 @@
+{
+	"name": "wpbp/wordpress-plugin-boilerplate-powered",
+	"description": "Wordpress Plugin Boilerplate with steroids!",
+	"license": "GPL-3.0-or-later",
+	"type": "wordpress-plugin",
+	"authors": [
+		{
+			"name": "Winston AI",
+			"email": "support@gowinston.ai",
+			"homepage": "https://gowinston.ai"
+		}
+	],
+	"homepage": "https://github.com/WPBP/WordPress-Plugin-Boilerplate-Powered",
+	"require": {
+		"php": "7.4",
+		"cmb2/cmb2": "2.10.1",
+		"composer/installers": "1.x",
+		"inpsyde/assets": "^2.8",
+		"inpsyde/wp-context": "1.3.*",
+		"micropackage/requirements": "^1.0",
+		"origgami/cmb2-grid": "dev-master",
+		"wpbp/debug": "1.1.*",
+		"wpbp/page-madness-detector": "^1.0"
+	},
+	"require-dev": {
+		"codeatcode/codeatcs": "^1.0",
+		"codeception/codeception": "4.2.*",
+		"codeception/module-asserts": "^1.0",
+		"codeception/module-cli": "^1.0",
+		"codeception/module-db": "^1.0",
+		"codeception/module-filesystem": "^1.0",
+		"codeception/module-phpbrowser": "^1.0",
+		"codeception/module-rest": "^1.2",
+		"codeception/module-webdriver": "^1.0",
+		"codeception/util-universalframework": "^1.0",
+		"dealerdirect/phpcodesniffer-composer-installer": "1.0.0",
+		"ergebnis/composer-normalize": "^2.6",
+		"lucatume/function-mocker": "~1.0",
+		"lucatume/wp-browser": "^3.1",
+		"phpro/grumphp": "^1.13",
+		"phpunit/phpunit": "^9.2",
+		"szepeviktor/phpstan-wordpress": "^1.1.6"
+	},
+	"repositories": [
+		{
+			"type": "git",
+			"url": "https://github.com/ayecode/wp-super-duper"
+		}
+	],
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"autoload": {
+		"psr-4": {
+			"Winston_AI\\Backend\\": "backend/",
+			"Winston_AI\\Frontend\\": "frontend/",
+			"Winston_AI\\Rest\\": "rest/",
+			"Winston_AI\\Ajax\\": "ajax/",
+			"Winston_AI\\Internals\\": "internals/",
+			"Winston_AI\\Cli\\": "cli/",
+			"Winston_AI\\Integrations\\": "integrations/",
+			"Winston_AI\\Engine\\": "engine/"
+		}
+	},
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true,
+			"cweagans/composer-patches": true,
+			"dealerdirect/phpcodesniffer-composer-installer": true,
+			"ergebnis/composer-normalize": true,
+			"phpro/grumphp": true
+		},
+		"platform": {
+			"php": "7.4"
+		}
+	},
+	"extra": {
+		"installer-paths": {
+			"vendor/{$name}/": [
+				"cmb2/cmb2",
+				"origgami/cmb2-grid",
+				"stevegrunwell/wp-cache-remember"
+			]
+		},
+		"patches": {
+			"ayecode/wp-super-duper": {
+				"Fix v2": "https://patch-diff.githubusercontent.com/raw/AyeCode/wp-super-duper/pull/25.patch"
+			}
+		}
+	}
+}
